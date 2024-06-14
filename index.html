@@ -5,121 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vitaliy Korbut - Real Estate Investment Manager and SaaS Developer</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
     body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      margin: 40px;
-      background-color: #f4f4f4;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #444;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      background-attachment: fixed;
+    }
+
+    h1, h2, h3, p, ul {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
       color: #333;
     }
-    h1, h2, h3, p, ul, small {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+
     a {
-      color: #0066cc;
+      color: #1a73e8;
+      text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .email {
       text-align: center;
       margin-top: 20px;
     }
-    .service-section {
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      padding: 20px;
+
+    .section {
+      background-color: #fff;
+      padding: 40px;
       margin: 20px auto;
       max-width: 800px;
-      box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
     }
-    .service-detail {
+
+    .section p, .section ul {
       text-align: left;
-      margin-top: 20px;
     }
+
     ul {
       list-style-type: none;
       padding: 0;
     }
+
     li {
-      text-align: center;
-      margin-bottom: 10px;
-      margin-top: 10px;
+      margin-bottom: 15px;
     }
+
     .highlight {
-      font-weight: bold;
-      color: #0056b3;
+      font-weight: 500;
+      color: #1a73e8;
     }
-    .small {
-      font-size: 0.8em;
+
+    .button-link {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 20px 0;
+      color: #fff;
+      background-color: #1a73e8;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
     }
-    .mvp {
-      font-weight: bold;
+
+    .button-link:hover {
+      background-color: #1558a8;
+      transform: scale(1.05);
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 1.1em;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <h1>Welcome!</h1>
-  <p>Hi, I'm Vitaliy Korbut. I'm currently developing <a href="http://estatemath.com" target="_blank">EstateMath.com</a> the toolset for home buying and real estate investment. Using these tools, I've identified undervalued properties and optimized listing and upgrade strategies, boosting rental incomes by an astonishing 70%! Now, I plan to assist home buyers and investors in Dubai with even more advanced technology.</p>
-
-  <div class="service-section">
-    <h2>EstateMath SaaS, Dubai</h2>
-    <p>The platform offers tailored financial modeling tools designed for effective home buying and real estate investment decision-making. Key features:</p>
-    <ul>
-      <li class="mvp"><strong>Basic Property Recommendations*</strong></li>
-      <small>Utilize sophisticated internal algorithms to generate property recommendations tailored to investor, tenant and home buyer profiles.</small>
-      <li class="mvp"><strong>Simple Predictive Modeling Interface*</strong></li>
-      <small>User-controlled interface for creating and adjusting predictive models, with capabilities to simulate various market scenarios.</small>
-      <li class="mvp"><strong>Automated Notifications System*</strong></li>
-      <small>Configurable alerts for real-time market changes and opportunities, operating 24/7.</small>
-      <li>Pricing Mechanism Analysis</li>
-      <small>Interactive tools to apply and compare cost-based, value-based, and comp-based pricing under simulated market conditions.</small>
-      <li>In-Person Consultations</li>
-      <small>Scheduled expert consultations to explore optimal use of EstateMath tools and data.</small>
-      <li>Custom Report Generation</li>
-      <small>Tools to create and receive reports, maps, and lists with detailed analyses and forecasts.</small>
-      <li>On-Demand Analytical Reports</li>
-      <small>Facility to request and receive bespoke analytical reports based on specific investor needs.</small>
-      <li>Comprehensive Data Integration</li>
-      <small>Capabilities to merge multiple data sources, including proprietary investor data, into EstateMath's analytics platform.</small>
-      <li>API Connectivity</li>
-      <small>Detailed API documentation for integration with external management systems, allowing continuous data flow and functionality extension.</small>
-      <li>Priority Data Access</li>
-      <small>Immediate and prioritized access to up-to-date market data, listings, and news for quick strategic adjustments.</small>
-      <li>Capital Management Strategies</li>
-      <small>Tools and guidance for optimal capital raising and leveraging based on current market analyses.</small>
-      <li>Risk Management Configurator</li>
-      <small>Tools to select and maintain desired risk levels, with adjustable parameters for alpha and beta strategies across different asset classes.</small>
-      <li>Financial Leverage Comparisons</li>
-      <small>Systematic comparison tools for evaluating financial leverage options from various institutions.</small>
-      <li>Strategic Market Entry</li>
-      <small>Access to detailed case studies and analytical tools for developing market-entry strategies.</small>
-      <li>Expert Network Integration</li>
-      <small>Direct access to a curated network of industry experts for domain-specific insights and strategies.</small>
-      <li>Real-Time Monitoring Dashboards</li>
-      <small>Customizable dashboards to monitor real-time data on investments and market conditions, supporting immediate strategic responses.</small>
-    </ul>
-    <small>*These features are the MVP features and will be released first.</small>
+  <div class="section">
+    <p>Hi, I'm Vitaliy Korbut. I'm currently developing <a href="https://estatemath.com" target="_blank">EstateMath.com</a>, a toolset for home buying and real estate investment. Using these tools, I've identified undervalued properties and optimized listing and upgrade strategies, boosting rental incomes by an astonishing 70%! Now, I plan to assist home buyers and investors in Dubai with even more advanced technology.</p>
   </div>
 
-  <div class="service-section">
-    <h2>Real Estate Investment Management, Dubai</h2>
-    <p>With the insights gained from my own real estate investments, I aim to extend my services to manage real estate investments for others, offering personalized strategies and detailed market analysis to maximize returns. My hands-on approach covers:</p>
+  <div class="section">
+    <h2>EstateMath Insights</h2>
+    <p><em>The Smart Way to Invest in Real Estate</em></p>
+    <p>Imagine a world where buying your dream home or making a smart investment is as easy as a few clicks. EstateMath Insights makes this possible. It’s your personal guide in the complex real estate market, using cutting-edge algorithms to deliver personalized property recommendations and pricing strategies. Think of it as having a real estate guru in your pocket, helping you navigate the market with ease and confidence.</p>
     <ul>
-      <li>Property Acquisition</li>
-      <small>Market research, property evaluation, negotiation, and transaction finalization.</small>
-      <li>Property Management</li>
-      <small>Ensuring maintenance, tenant satisfaction, and optimal occupancy and operational efficiency.</small>
-      <li>Financial Management</li>
-      <small>Rent collection, expense management, financial reporting, and tax compliance.</small>
-      <li>Reporting</li>
-      <small>Regular updates on property performance, financial health, and operational issues.</small>
+      <li><span class="highlight">Model-Based Recommendations:</span> Tailored property suggestions just for you.</li>
+      <li><span class="highlight">Pricing Mechanism Analysis:</span> Interactive tools to master pricing strategies.</li>
+      <li><span class="highlight">Predictive Modeling Interface:</span> Simulate future market scenarios effortlessly.</li>
+      <li><span class="highlight">Automated Notifications System:</span> Real-time alerts for the hottest deals.</li>
     </ul>
+  </div>
+
+  <div class="section">
+    <h2>EstateMath Capital</h2>
+    <p><em>The Financial Backbone for Your Real Estate Ventures</em></p>
+    <p>Imagine having a team of expert financial advisors, sophisticated tools, and exclusive opportunities at your fingertips. EstateMath Capital brings this vision to life. It's designed to help you maximize your returns and manage your real estate investments with unparalleled ease and precision.</p>
+    <ul>
+      <li><span class="highlight">Investment Management:</span> Strategic planning for optimal returns.</li>
+      <li><span class="highlight">Exclusive Opportunities:</span> Access high-potential investments.</li>
+      <li><span class="highlight">Financial Expertise:</span> Professional guidance to navigate the market.</li>
+      <li><span class="highlight">Integrated Solutions:</span> Seamless blend of financial services and advanced technology.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>And one more thing...</h2>
+    <p>Our journey with EstateMath is just beginning. We’ve all experienced the frustrations of living in less-than-ideal apartments or enduring terrible commutes. With EstateMath, we’re turning those past challenges into opportunities for a better, smarter future. Together, we can transform real estate investment, making it more accessible and more rewarding than ever before. Join us, and let’s redefine the possibilities.</p>
   </div>
 
   <div class="email">
-    <p>Contact me at: <a href="mailto:korbutvitaliy@gmail.com">korbutvitaliy@gmail.com</a></p>
+    <p>Contact me at: <a href="mailto:korbutvitaliy@gmail.com" class="button-link">korbutvitaliy@gmail.com</a></p>
   </div>
 </body>
 </html>
