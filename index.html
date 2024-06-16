@@ -92,7 +92,7 @@
       color: #555;
     }
 
-    .profile-photo {
+    /* .profile-photo {
       display: block;
       margin: 20px auto;
       width: 150px;
@@ -100,7 +100,30 @@
       border-radius: 50%;
       box-shadow: 0 4px 16px rgba(0,0,0,0.1);
       object-fit: cover;
-    }
+    } */
+
+    .profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-photo {
+  width: 150px; /* Adjust size as necessary */
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.dubai-icon {
+  width: 150px; /* Match size with profile photo for consistency */
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
 
     .services {
       display: flex;
@@ -170,7 +193,13 @@
 </head>
 <body>
   <h1>Transform Your Real Estate Experience in Dubai</h1>
-  <img src="images/vitaliy.jpg" alt="Vitaliy Korbut - Real Estate Investment Manager" class="profile-photo">
+
+  <div class="profile-container">
+    <img src="images/vitaliy.jpg" alt="Vitaliy Korbut - Real Estate Investment Manager" class="profile-photo">
+    <img src="images/burj-khalifa.jpeg" alt="Dubai Icon" class="profile-photo dubai-icon">
+    <!-- <img src="images/burj-khalifa.png" alt="Dubai Icon" class="dubai-icon"> -->
+  </div>
+
   <div class="section">
     <p>Hello, I'm Vitaliy Korbut. With a strong foundation in mathematics, recognized through national olympiads, and an economics degree from BSU, I've been blending my skills as a software engineer for nearly a decade with a proven track record in property management, including managing successful Airbnb properties with a SuperHost status due to consistently high ratings and low vacancy rates.</p>
     <p>At <a href="https://estatemath.com/real-estate-investment-dubai" target="_blank">EstateMath.com</a>, I'm committed to revolutionizing the real estate market in Dubai. My tools have already optimized rental incomes by up to 70%. Now, I aim to transform your real estate decisions using advanced technology to maximize location benefits, making significant life improvements effortlessly accessible.</p>
