@@ -100,21 +100,90 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.1);
       object-fit: cover;
     }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .service {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 10px;
+      flex: 1 1 calc(33.333% - 40px); /* 3 columns with spacing */
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    .service h3 {
+      color: #333;
+      font-weight: 500;
+    }
+
+    .service p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #666;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .service {
+        flex: 1 1 calc(50% - 40px); /* 2 columns on tablets */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .service {
+        flex: 1 1 100%; /* 1 column on smartphones */
+      }
+    }
+
+    .services-header {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #333;
+      margin: 40px 0 20px 0;
+    }
   </style>
 </head>
 <body>
   <h1>Welcome!</h1>
   <img src="images/vitaliy.jpg" alt="Vitaliy Korbut" class="profile-photo">
   <div class="section">
-    <p>Hi, I'm Vitaliy Korbut. I'm currently developing <a href="https://estatemath.com" target="_blank">EstateMath.com</a>, a toolset for home buying and real estate investment. Using these tools, I've identified undervalued properties and optimized listing and upgrade strategies, boosting rental incomes by an astonishing 70%! Now, I plan to assist home buyers and investors in Dubai with even more advanced technology.</p>
+    <p>Hello, I'm Vitaliy Korbut. With a strong foundation in mathematics, recognized through national olympiads, and an economics degree from BSU, I've been blending my skills as a software engineer for nearly a decade with a proven track record in property management, including managing successful Airbnb properties with a SuperHost status due to consistently high ratings and low vacancy rates.</p>
+    <p>At <a href="https://estatemath.com" target="_blank">EstateMath.com</a>, I'm committed to revolutionizing the real estate market in Dubai. My tools have already optimized rental incomes by up to 70%. Now, I aim to transform your real estate decisions using advanced technology to maximize location benefits, making significant life improvements effortlessly accessible.</p>
+  </div>
+
+  <h2 class="services-header">Three Essential Solutions</h2>
+
+  <div class="services">
+    <div class="service">
+        <h3>EstateMath Insights</h3>
+        <p>For individual investors and homebuyers: Unlock personalized real estate investment opportunities in Dubai with advanced predictive analytics and continuous learning algorithms to refine your investment strategy.</p>
+    </div>
+    <div class="service">
+        <h3>EstateMath Capital</h3>
+        <p>For high-net-worth individuals and institutional investors: Experience a hands-free, fully managed real estate investment solution that prioritizes security and growth, turning your capital into safe, growing assets.</p>
+    </div>
+    <div class="service">
+        <h3>EstateMath Management</h3>
+        <p>For property owners: Professional management services for your real estate assets in Dubai, ensuring optimal operation and tenant satisfaction.</p>
+    </div>
   </div>
 
   <div class="section">
     <h2>EstateMath Insights</h2>
     <p><em>The Smart Way to Invest in Real Estate</em></p>
-    <p>Imagine buying your dream home or making a smart investment with just a few clicks. EstateMath Insights, your personal real estate guide, uses cutting-edge algorithms to deliver personalized property recommendations and pricing strategies, helping you navigate the market with confidence.</p>
-    <p>Want to invest in Dubai's booming real estate market but don't know where to start? EstateMath Insights helps you discover your preferences and understand the market, providing tailored recommendations that improve as you update your investor profile. As you refine your wants and needs, our algorithms and recommendations adapt, giving you even deeper insights into your wants and needs until you reach full confidence in having made the perfect choice.</p>
-    <p>Learn from case studies of investors like you who have already bought in Dubai, understand their insights, avoid common pitfalls, and let EstateMath Insights illuminate your path to the perfect investment.</p>
+    <p>Imagine buying your dream home or investing smartly in Dubai's booming market with just a few clicks. Let EstateMath Insights guide you with personalized property recommendations and strategic pricing.</p>
+    <p>Want to invest but don't know where to start? EstateMath Insights helps you discover your preferences and understand the market, providing tailored recommendations that improve as you update your investor profile. As you refine your wants and needs, our algorithms and recommendations adapt, giving you even deeper insights into your wants and needs until you reach full confidence in having made the perfect choice.</p>
+    <p>Learn from the experiences of successful investors and avoid common pitfalls with our comprehensive case studies.</p>
     <ul>
       <li><span class="highlight">Model-Based Recommendations:</span> Tailored property suggestions just for you.</li>
       <li><span class="highlight">Pricing Mechanism Analysis:</span> Interactive tools to master pricing strategies.</li>
@@ -128,19 +197,37 @@
   <div class="section">
     <h2>EstateMath Capital</h2>
     <p><em>Your Trusted Partner in Real Estate Investment</em></p>
-    <p>What if your investment could grow safely and surely without you lifting a finger? Welcome to EstateMath Capital, where we combine expertise with innovation to manage your real estate investments. Our fully managed service safeguards your funds and focuses on growth, so you can invest with peace of mind.</p>
+    <p>Secure and grow your investments without the hassle. EstateMath Capital combines expert strategies with innovative technology to ensure your capital is not only safe but also flourishing.</p>
     <ul>
       <li><span class="highlight">Tailored Asset Growth:</span> Your investments are managed to maximize returns, personalized just for you.</li>
       <li><span class="highlight">Expert-Led Strategies:</span> Benefit from professional advice and industry-leading practices.</li>
       <li><span class="highlight">Safety First Approach:</span> We prioritize the security of your investments as if they were our own.</li>
       <li><span class="highlight">Seamless Technology Integration:</span> Advanced tools enhance your investment experience, making it efficient and transparent.</li>
     </ul>
-    <p>Curious to see how it works? Join us as we redefine real estate investment with safety and innovation. Let EstateMath Capital be your guide to real estate investing like never before.</p>
+    <p>Explore the future of investment with us. Discover how EstateMath Capital redefines real estate investment for a safer, more profitable future.</p>
+  </div>
+
+  <div class="section">
+    <h2>EstateMath Management</h2>
+    <p><em>Comprehensive Property Management for Dubai Real Estate</em></p>
+    <p>Own real estate in Dubai? Let EstateMath Management handle everything from daily operations to tenant relations, ensuring your property remains profitable and well-maintained.</p>
+    <ul>
+      <li><span class="highlight">Full-Spectrum Management:</span> Comprehensive services from leasing to maintenance.</li>
+      <li><span class="highlight">Tenant Relations:</span> Ensuring tenant satisfaction and high retention rates.</li>
+      <li><span class="highlight">Operational Efficiency:</span> Utilizing advanced technologies to streamline operations and reduce costs.</li>
+      <li><span class="highlight">Transparent Reporting:</span> Regular updates on your property's status and financial health.</li>
+    </ul>
+    <p>Remove the complexities of property management. Contact us to ensure your Dubai real estate investments are in expert hands.</p>
+  </div>
+
+  <div class="section">
+    <h2>Building Better Environments</h2>
+    <p>At EstateMath, we believe that your environment profoundly shapes your daily life and future. We're dedicated to crafting real estate solutions that enhance your living and working spaces, ensuring that every decision is an opportunity for improvement. Step into a future where your environment works for you.</p>
   </div>
 
   <div class="section">
     <h2>And one more thing...</h2>
-    <p>Our journey with EstateMath is just beginning. We’ve all experienced the frustrations of living in less-than-ideal apartments or enduring terrible commutes. With EstateMath, we’re turning those past challenges into opportunities for a better, smarter future. Together, we can transform real estate investment, making it more accessible and more rewarding than ever before. Join us, and let’s redefine the possibilities.</p>
+    <p>Your surroundings define your lifestyle, opportunities, and success. At EstateMath, we are committed to finding and investing in locations that elevate your well-being and financial growth. By harnessing the power of the right environment, we help you build a foundation for a better future. Join us and discover the profound impact of strategic location choices, turning every decision into a step towards a more fulfilling and prosperous life.</p>
   </div>
 
   <div class="email">
